@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio Web</title>
+
+  <!-- Incluye FontAwesome para los íconos -->
+   <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+ 
+  
+  
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul id="nav-menu">
+        <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+        <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+        <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Slider -->
+<div id="slider">
+  <div class="foto-perfil">
+    <img src="./img/foto de perfil mauro Pinto.jpg" alt="Foto de Mauro Pinto" class="foto-circular">
+  </div>
+  <a href="#inicio" class="slider-item"><i class="fas fa-home"></i> Inicio</a>
+  <a href="#sobre-mi" class="slider-item"><i class="fas fa-user"></i> Sobre Mí</a>
+  <a href="#proyectos" class="slider-item"><i class="fas fa-briefcase"></i> Proyectos</a>
+  <a href="#contacto" class="slider-item"><i class="fas fa-envelope"></i> Contacto</a>
+  
+  <!-- Enlace de GitHub corregido -->
+  <a href="https://github.com/tu-usuario-github" target="_blank" class="slider-item"><i class="fab fa-github"></i> GitHub</a>
+
+  <a href="https://www.linkedin.com/in/mauroalexanderpinto/" target="_blank" class="slider-item"><i class="fab fa-linkedin"></i> LinkedIn</a>
+  <a class="btn btn-primary" href="./img/Cv Js developer Maur Alexander Pinto 2025. 2.2.pdf" download="Mauro_Pinto_CV.pdf">Descargar CV</a>
+  <a href="https://www.facebook.com/MAUROLIN" target="_blank" class="slider-item"><i class="fab fa-facebook"></i> Facebook</a>
+  <a href="https://www.instagram.com/" target="_blank" class="slider-item"><i class="fab fa-instagram"></i> Instagram</a>
+  <a href="https://x.com/twitter?lang=es&mx=2" target="_blank" class="slider-item"><i class="fab fa-twitter"></i> Twitter</a>
+</div>
+
+  <!-- Header -->
+  <header>
+    <div class="animated-title">
+      <h1>Soy Desarrollador Web</h1>
+    </div>
+    <div class="header-symbols">
+      <i class="js-symbol fab fa-js-square"></i>
+      <i class="react-symbol fab fa-react"></i>
+    </div>
+  </header>
+
+
+
+
+    <section id="sobre-mi" class="sobre-mi">
+      <div class="contenedor-sobre-mi">
+        <img src="./img/foto de perfil mauro Pinto.jpg" alt="Tu Foto" class="foto-sobre-mi">
+        <div class="texto-sobre-mi">
+          <h2 class="titulo-sobre-mi">Sobre mí</h2>
+          <p class="intro-sobre-mi">Soy Mauro Pinto, un apasionado desarrollador web con una formación en Comunicación
+            Audiovisual. Mi misión es transformar ideas en soluciones digitales a través de la programación, creando
+            experiencias únicas y efectivas.</p>
+
+          <h3>Mi pasión por la programación</h3>
+          <p>La programación no solo es un trabajo, sino una forma de vida. Disfruto del proceso creativo de construir
+            desde cero aplicaciones web interactivas. Mi enfoque está en la mejora continua y la adaptación a nuevas
+            tecnologías, lo que me permite entregar soluciones innovadoras.</p>
+
+          <div class="habilidades">
+            <div class="habilidad html">
+              <i class="fab fa-html5"></i>
+              <h4>HTML</h4>
+              <p>Lenguaje de marcado para la web.</p>
+            </div>
+            <div class="habilidad css">
+              <i class="fab fa-css3-alt"></i>
+              <h4>CSS</h4>
+              <p>Estiliza sitios web con diseño atractivo.</p>
+            </div>
+            <div class="habilidad js">
+              <i class="fab fa-js"></i>
+              <h4>JavaScript</h4>
+              <p>Lenguaje de programación para interactividad.</p>
+            </div>
+            <div class="habilidad react">
+              <i class="fab fa-react"></i>
+              <h4>React</h4>
+              <p>Biblioteca de JavaScript para interfaces.</p>
+            </div>
+          </div>
+    </section>
+
+
+    <section id="proyectos">
+      <div class="container">
+        <div class="proyectos-container">
+          <!-- Card 1 -->
+          <div class="card">
+            <div class="card-icon">
+              <i class="fa-brands fa-html5 html-icon"></i>
+              <i class="fa-brands fa-css3-alt css-icon"></i>
+              <i class="fa-brands fa-bootstrap bootstrap-icon"></i>
+            </div>
+            <h5 class="card-title">HTML, CSS y Bootstrap</h5>
+            <p class="card-text">Diseños responsivos con Bootstrap.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Ver Proyecto</button>
+            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalGit1">Ver Código</button>
+          </div>
+    
+          <!-- Modal 1 (Proyecto) -->
+          <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modal1Label">HTML, CSS y Bootstrap</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <iframe src="https://produccion2018.github.io/covadenil/" width="100%" height="400px"></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Modal Git 1 (Código) -->
+          <div class="modal fade" id="modalGit1" tabindex="-1" aria-labelledby="modalGit1Label" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalGit1Label">Código en GitHub</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <iframe src="https://github.com/produccion2018/covadenil.git" width="100%" height="400px"></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Card 2 -->
+          <div class="card">
+            <div class="card-icon">
+              <i class="fa-brands fa-square-js js-icon"></i>
+            </div>
+            <h5 class="card-title">JavaScript</h5>
+            <p class="card-text">Proyectos interactivos con JS.</p>
+            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal2">Ver Proyecto</button>
+            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalGit2">Ver Código</button>
+          </div>
+    
+          <!-- Modal 2 (Proyecto) -->
+          <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modal2Label">JavaScript</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <iframe src="https://produccion2018.github.io/reservar-mesa/" width="100%" height="400px"></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Modal Git 2 (Código) -->
+          <div class="modal fade" id="modalGit2" tabindex="-1" aria-labelledby="modalGit2Label" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalGit2Label">Código en GitHub</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <iframe src="https://github.com/produccion2018/reservar-mesa.git" width="100%" height="400px"></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Card 3 -->
+          <div class="card">
+            <div class="card-icon">
+              <i class="fa-brands fa-react react-icon"></i>
+            </div>
+            <h5 class="card-title">React</h5>
+            <p class="card-text">Aplicaciones dinámicas en React.</p>
+            <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal3">Ver Proyecto</button>
+            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalGit3">Ver Código</button>
+          </div>
+    
+          <!-- Modal 3 (Proyecto) -->
+          <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modal3Label">React</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <iframe src="" width="100%" height="400px"></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Modal Git 3 (Código) -->
+          <div class="modal fade" id="modalGit3" tabindex="-1" aria-labelledby="modalGit3Label" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalGit3Label">Código en GitHub</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <iframe src="" width="100%" height="400px"></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Card 4 -->
+          <div class="card">
+            <div class="card-icon">
+              <i class="fa-solid fa-database api-icon"></i>
+            </div>
+            <h5 class="card-title">APIs</h5>
+            <p class="card-text">Integración con APIs dinámicas.</p>
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal4">Ver Proyecto</button>
+            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalGit4">Ver Código</button>
+          </div>
+    
+          <!-- Modal 4 (Proyecto) -->
+          <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modal4Label">APIs</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <iframe src="https://produccion2018.github.io/Conversor-de-moneda/" width="100%" height="400px"></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Modal Git 4 (Código) -->
+          <div class="modal fade" id="modalGit4" tabindex="-1" aria-labelledby="modalGit4Label" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalGit4Label">Código en GitHub</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <iframe src="https://github.com/tuusuario/proyecto4" width="100%" height="400px"></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <section class="formulario-seccion">
+        <h2 class="titulo-formulario">Contáctame</h2>
+        <form id="contacto-form">
+          <div class="campo">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Tu nombre">
+          </div>
+          <div class="campo">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Tu email">
+          </div>
+          <div class="campo">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" placeholder="Tu mensaje"></textarea>
+          </div>
+          <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+      </section>
+    </section>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/5491123456789" target="_blank" class="whatsapp-btn">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    </a>
+
+
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+
+        </div>
+        <div class="footer-links">
+          <a href="#inicio">Inicio</a>
+          <a href="#sobre-mi">Sobre Mí</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Mauro Pinto. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap Icons (Íconos) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/app.js"></script>
+  </body>
+
+</html>
