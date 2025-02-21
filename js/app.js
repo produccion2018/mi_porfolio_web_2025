@@ -86,3 +86,57 @@ document.addEventListener("DOMContentLoaded", function() {
     return regex.test(email);
   }
 });
+
+// funcion para arrays de proecutos ver mas
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const proyectosAdicionales = {
+    "html-css": [
+      { url: "https://ejemplo1.com", git: "#", title: "Proyecto HTML 2" },
+      { url: "#", git: "#", title: "Proyecto HTML 3" },
+    ],
+    "javascript": [
+      { url: "#", git: "#", title: "Proyecto JS 2" },
+      { url: "#", git: "#", title: "Proyecto JS 3" },
+    ],
+    "react": [
+      { url: "#", git: "", title: "Proyecto React 2" },
+      { url: "#", git: "#", title: "Proyecto React 3" },
+    ],
+    "apis": [
+      { url: "#", git: "#", title: "Proyecto API 2" },
+      { url: "#", git: "#", title: "Proyecto API 3" },
+    ],
+  };
+
+  document.querySelectorAll(".btn-show-more").forEach((btn) => {
+    btn.addEventListener("click", function () {
+      const category = this.getAttribute("data-category");
+      const container = this.previousElementSibling;
+
+      if (container.classList.contains("hidden")) {
+        // Generar y agregar los proyectos adicionales
+        container.innerHTML = proyectosAdicionales[category]
+          .map(
+            (p) => `
+              <div class="extra-project">
+                <h6>${p.title}</h6>
+                <a href="${p.url}" class="btn btn-primary" target="_blank">Ver Proyecto</a>
+                <a href="${p.git}" class="btn btn-secondary">Ver Código Git</a>
+              </div>
+            `
+          )
+          .join("");
+
+        container.classList.remove("hidden");
+        this.textContent = "Ver menos";
+      } else {
+        // Ocultar los proyectos si ya están visibles
+        container.innerHTML = "";
+        container.classList.add("hidden");
+        this.textContent = "Ver más";
+      }
+    });
+  });
+});
