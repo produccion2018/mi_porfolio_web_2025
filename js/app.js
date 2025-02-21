@@ -89,24 +89,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // funcion para arrays de proecutos ver mas
 
-
 document.addEventListener("DOMContentLoaded", function () {
   const proyectosAdicionales = {
     "html-css": [
-      { url: "https://ejemplo1.com", git: "#", title: "Proyecto HTML 2" },
-      { url: "#", git: "#", title: "Proyecto HTML 3" },
+      { url: "https://produccion2018.github.io/Postres-mireya/", git: "https://github.com/produccion2018/Postres-mireya.git", title: "Proyecto HTML 2" },
+      { url: "https://produccion2018.github.io/MB-Formulario/", git: "https://github.com/produccion2018/MB-Formulario.git", title: "Proyecto HTML 3" },
     ],
     "javascript": [
-      { url: "#", git: "#", title: "Proyecto JS 2" },
-      { url: "#", git: "#", title: "Proyecto JS 3" },
+      { url: "https://produccion2018.github.io/reservar-mesa/", git: "https://github.com/produccion2018/reservar-mesa.git", title: "Proyecto JS 2" },
+      { url: " https://produccion2018.github.io/turnos-m-dicos/", git: "https://github.com/produccion2018/turnos-m-dicos.git", title: "Proyecto JS 3" },
     ],
     "react": [
-      { url: "#", git: "", title: "Proyecto React 2" },
-      { url: "#", git: "#", title: "Proyecto React 3" },
+      { url: "https://ejemplo5.com", git: "https://github.com/produccion2018/Simulador-de-APIs-de-pel-culas.git", title: "Proyecto React 2" },
+      { url: "https://ejemplo6.com", git: "https://github.com/usuario/proyecto-react3", title: "Proyecto React 3" },
     ],
     "apis": [
-      { url: "#", git: "#", title: "Proyecto API 2" },
-      { url: "#", git: "#", title: "Proyecto API 3" },
+      { url: "https://produccion2018.github.io/Simulador-de-APIs-de-pel-culas/", git: "https://github.com/produccion2018/Simulador-de-APIs-de-pel-culas.git", title: "Proyecto API 2" },
+      { url: "https://produccion2018.github.io/Conversor-de-moneda/", git: "https://github.com/produccion2018/Conversor-de-moneda.git", title: "Proyecto API 3" },
     ],
   };
 
@@ -116,14 +115,14 @@ document.addEventListener("DOMContentLoaded", function () {
       const container = this.previousElementSibling;
 
       if (container.classList.contains("hidden")) {
-        // Generar y agregar los proyectos adicionales
+        // Mostrar proyectos adicionales dentro de la tarjeta
         container.innerHTML = proyectosAdicionales[category]
           .map(
             (p) => `
               <div class="extra-project">
                 <h6>${p.title}</h6>
                 <a href="${p.url}" class="btn btn-primary" target="_blank">Ver Proyecto</a>
-                <a href="${p.git}" class="btn btn-secondary">Ver Código Git</a>
+                <a href="${p.git}" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Ver Código Git</a>
               </div>
             `
           )
@@ -132,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
         container.classList.remove("hidden");
         this.textContent = "Ver menos";
       } else {
-        // Ocultar los proyectos si ya están visibles
+        // Ocultar proyectos adicionales
         container.innerHTML = "";
         container.classList.add("hidden");
         this.textContent = "Ver más";
