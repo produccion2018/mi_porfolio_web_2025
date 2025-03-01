@@ -948,7 +948,7 @@ textarea:focus {
   color: #007bff;
 }
 
-/* Derechos de autor */
+/* Autor Mauro Pinto */
 .footer-bottom {
   margin-top: 15px;
   font-size: 0.9rem;
@@ -968,8 +968,13 @@ textarea:focus {
 /* robot */
 .loader-container {
   display: none;
-  text-align: center;
-  margin-top: 20px;
+  position: relative;
+  width: 100%;
+  height: 60px; /* Espacio reservado para la animación */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
 }
 
 .loader {
@@ -978,19 +983,24 @@ textarea:focus {
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  animation: spin 2s linear infinite;
+  position: relative;
+  animation: moveAndSpin 8s ease-in-out infinite;
 }
 
-@keyframes spin {
+/* Movimiento lento + giro */
+@keyframes moveAndSpin {
   0% {
-    transform: rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+  }
+  50% {
+    transform: translateX(90%) rotate(720deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: translateX(0) rotate(1440deg); 
   }
 }
 
 /* Mostrar el loader después de un retraso */
 .mostrar-loader .loader-container {
-  display: block;
+  display: flex;
 }

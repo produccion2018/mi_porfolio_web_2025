@@ -142,16 +142,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // animacionfinal
-
 window.onload = function() {
   setTimeout(function() {
-    // Mostrar el loader después de 3 segundos
-    document.querySelector('#sobre-mi').classList.add('mostrar-loader');
-  }, 3000); // Ajusta el tiempo según necesites
+    document.querySelector('.loader-container').style.display = 'flex';
+  }, 2000); 
 };
-
-
-
 
 
 
