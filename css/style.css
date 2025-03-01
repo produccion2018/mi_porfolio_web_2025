@@ -1,21 +1,21 @@
 /* Importamos la fuente desde Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 
 /* General */
 body {
-  font-family: 'Poppins', 'Roboto', sans-serif;
+  font-family: "Poppins", "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
   scroll-behavior: smooth;
   font-family: Arial, sans-serif;
   background-color: #800080;
-  padding-top: 60px; 
+  padding-top: 60px;
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
   margin: 0;
   padding: 0.5rem 0;
 }
@@ -26,8 +26,6 @@ h1, h2, p {
   padding: 0;
   box-sizing: border-box;
 }
-
-
 
 /* Barra de navegación */
 .navbar {
@@ -143,8 +141,8 @@ h1, h2, p {
 }
 /* Espaciado más compacto para las secciones */
 section {
-  padding: 40px 10px;  
-  min-height: 70vh;  
+  padding: 40px 10px;
+  min-height: 70vh;
 }
 
 /* Contenedor de la foto */
@@ -159,15 +157,15 @@ section {
 
 /* Imagen circular con mejor ajuste */
 .foto-circular {
-  width: 60px; 
-  height: 60px; 
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   border: 3px solid #fff;
   object-fit: cover;
   background-color: transparent;
   display: block;
   margin: 0 auto;
-  transition: all 0.3s ease-in-out; 
+  transition: all 0.3s ease-in-out;
 }
 
 /* Ajuste para pantallas medianas (tablets) */
@@ -365,7 +363,8 @@ header {
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
@@ -391,12 +390,11 @@ header {
   }
 }
 
-
 /* Sección Sobre Mí */
 .sobre-mi {
   background-color: #800080;
   padding: 80px 40px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #fff; /* Texto blanco */
   text-align: center;
 }
@@ -415,9 +413,18 @@ header {
 
 /* Animación del título */
 @keyframes titulo-fade {
-  0% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.05); opacity: 0.8; }
-  100% { transform: scale(1); opacity: 1; }
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /* Contenedor de imagen y texto */
@@ -455,7 +462,7 @@ header {
   max-width: 600px;
   font-size: 1.2rem;
   line-height: 1.7;
-  font-family: 'Roboto Mono', monospace; 
+  font-family: "Roboto Mono", monospace;
 }
 
 /* Contenedor de habilidades */
@@ -470,7 +477,8 @@ header {
 
 /* Animación infinita en tarjetas */
 @keyframes habilidad-bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -492,7 +500,7 @@ header {
   flex-direction: column;
   justify-content: center;
   position: relative;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   animation: habilidad-bounce 3s infinite ease-in-out;
 }
 
@@ -528,10 +536,18 @@ header {
 }
 
 /* Colores según tecnología */
-.habilidad.html i { color: #e44d26; }
-.habilidad.css i { color: #264de4; }
-.habilidad.js i { color: #f7df1e; }
-.habilidad.react i { color: #61dafb; }
+.habilidad.html i {
+  color: #e44d26;
+}
+.habilidad.css i {
+  color: #264de4;
+}
+.habilidad.js i {
+  color: #f7df1e;
+}
+.habilidad.react i {
+  color: #61dafb;
+}
 
 /* Responsividad para Tablets */
 @media (max-width: 1024px) {
@@ -575,7 +591,6 @@ header {
     font-size: 2.2rem;
   }
 }
-
 
 /* PROYECTOS */
 /* Contenedor principal */
@@ -627,12 +642,24 @@ header {
   margin-bottom: 8px;
 }
 
-.html-icon { color: #E34F26; }
-.css-icon { color: #1572B6; }
-.bootstrap-icon { color: #563D7C; }
-.js-icon { color: #F7DF1E; }
-.react-icon { color: #61DAFB; }
-.api-icon { color: #28A745; }
+.html-icon {
+  color: #e34f26;
+}
+.css-icon {
+  color: #1572b6;
+}
+.bootstrap-icon {
+  color: #563d7c;
+}
+.js-icon {
+  color: #f7df1e;
+}
+.react-icon {
+  color: #61dafb;
+}
+.api-icon {
+  color: #28a745;
+}
 
 /* Contenido */
 .card-title {
@@ -655,11 +682,26 @@ header {
   margin-top: 10px;
 }
 
-.btn-primary { background-color: #007bff; color: #ffffff; }
-.btn-warning { background-color: #ffc107; color: #ffffff; }
-.btn-info { background-color: #17a2b8; color: #ffffff; }
-.btn-success { background-color: #28a745; color: #ffffff; }
-.btn-dark { background-color: #343a40; color: #ffffff; }
+.btn-primary {
+  background-color: #007bff;
+  color: #ffffff;
+}
+.btn-warning {
+  background-color: #ffc107;
+  color: #ffffff;
+}
+.btn-info {
+  background-color: #17a2b8;
+  color: #ffffff;
+}
+.btn-success {
+  background-color: #28a745;
+  color: #ffffff;
+}
+.btn-dark {
+  background-color: #343a40;
+  color: #ffffff;
+}
 
 .btn:hover {
   filter: brightness(0.85);
@@ -670,7 +712,7 @@ header {
   .proyectos-container {
     justify-content: center;
   }
-  
+
   .card {
     width: calc(50% - 10px);
   }
@@ -723,14 +765,13 @@ header {
   display: none;
 }
 
-
 /* Sección del formulario */
 .formulario-seccion {
-  background-color: #1e1e1e; 
+  background-color: #1e1e1e;
   color: #fff;
   padding: 60px 40px;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Título con estilo */
@@ -746,9 +787,18 @@ header {
 
 /* Animación del título */
 @keyframes titulo-fade {
-  0% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.05); opacity: 0.8; }
-  100% { transform: scale(1); opacity: 1; }
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /* Contenedor del formulario */
@@ -772,7 +822,8 @@ label {
   margin-bottom: 5px;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 12px;
   border-radius: 8px;
   border: none;
@@ -781,7 +832,8 @@ input, textarea {
   transition: box-shadow 0.3s ease;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   box-shadow: 0 0 10px #ffcc00cc;
 }
 
@@ -824,21 +876,25 @@ input:focus, textarea:focus {
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
 }
 
 /* Responsividad */
 @media (max-width: 768px) {
   .titulo-formulario {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   form {
-      max-width: 90%;
+    max-width: 90%;
   }
 }
-
 
 /* Estilos generales del footer */
 .footer {
@@ -902,24 +958,22 @@ input:focus, textarea:focus {
 /* Responsive */
 @media (min-width: 768px) {
   .footer-container {
-      flex-direction: row;
-      justify-content: space-between;
-      max-width: 1100px;
-      margin: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
   }
 }
 
-
 /* robot */
-
 .loader-container {
-  display: none; /* Inicialmente oculto */
+  display: none;
   text-align: center;
   margin-top: 20px;
 }
 
 .loader {
-  border: 8px solid #f3f3f3;
+  border: 8px solid #e3f306;
   border-top: 8px solid #3498db;
   border-radius: 50%;
   width: 50px;
@@ -928,13 +982,15 @@ input:focus, textarea:focus {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Mostrar el loader después de un retraso */
 .mostrar-loader .loader-container {
   display: block;
 }
-
-/* Puedes agregar más efectos de animación aquí */
