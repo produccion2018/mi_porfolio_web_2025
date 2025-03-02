@@ -142,10 +142,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // animacionfinal
+
 window.onload = function() {
   setTimeout(function() {
     document.querySelector('.loader-container').style.display = 'flex';
-  }, 2000); 
+  }, 2000); // Se activa después de 2 segundos
 };
 
 
